@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/theme.css" type="text/css" rel="stylesheet">
+    <link href="css/nav.css" type="text/css" rel="stylesheet">
+    <link href="css/footer.css" type="text/css" rel="stylesheet">
+    <link href="css/upload.css" type="text/css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <title>花咲く旅路-图片上传</title>
+</head>
+<body>
+    <nav id="nav-box">
+    <ul>
+        <li><a href="../index.html"><img src="../img/home.png" alt="home">首页</a></li>
+        <li><a href="browse.html"><img src="../img/browse.png" alt="browse">浏览页</a></li>
+        <li><a href="search.html"><img src="../img/search.png" alt="search">搜索页</a></li>
+        <li class="dropdown"><a href="#" id="profile" style="color: #f35200"><img src="../img/profile2.png" alt="profile">个人中心</a>
+            <ul class="dropdown-content">
+                <li><a href="upload.html" style="color: #f35200"><img src="../img/upload.png" alt="upload">上传</a></li>
+                <li><a href="myphoto.html"><img src="../img/myphoto.png" alt="myphoto">我的照片</a></li>
+                <li><a href="myfav.html"><img src="../img/myfav.png" alt="myfav">我的收藏</a></li>
+                <li><a href="login.html"><img src="../img/login.png" alt="login">登入</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<section>
+    <div id="upload">
+        <form name="form" id="form" method="post">
+            <label id="line1">
+                <input type="text" name="title" placeholder="Title">
+                <input type="file" name="file" id="file"/>
+                <label for="file" id="select-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                         width="50" height="50"
+                         viewBox="0 0 172 172"
+                         style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#f35200"><path d="M30.96,13.76c-9.44436,0 -17.2,7.75564 -17.2,17.2v110.08c0,9.44437 7.75564,17.2 17.2,17.2h110.08c9.44437,0 17.2,-7.75563 17.2,-17.2v-110.08c0,-9.44436 -7.75563,-17.2 -17.2,-17.2zM30.96,20.64h110.08c5.69163,0 10.32,4.62836 10.32,10.32v110.08c0,5.69163 -4.62837,10.32 -10.32,10.32h-110.08c-5.69164,0 -10.32,-4.62837 -10.32,-10.32v-110.08c0,-5.69164 4.62836,-10.32 10.32,-10.32zM82.56,44.72v37.84h-37.84v6.88h37.84v37.84h6.88v-37.84h37.84v-6.88h-37.84v-37.84z"></path></g></g></svg>
+                </label>
+            </label>
+            <br>
+            <div id="line2">
+
+                <img src="" class="hide" id="hide" width="120" alt="show">
+                <div id="info"><p>[ 暂无图片 ]</p></div>
+                <br>
+                <label>
+                    <textarea name="content" placeholder="Your text here" wrap="soft" rows="4"></textarea>
+                </label>
+            </div>
+            <br>
+            <div id="line3">
+                <label class="tag">
+                    #拍摄国家：
+                    <input type="text" name="country">
+                </label>
+                <br>
+                <label class="tag">
+                    #拍摄城市：
+                    <input type="text" name="city">
+                </label>
+            </div>
+        </form>
+        <div id="line4">
+            <button id="submit" value="上传">发布</button>
+            <script>
+                $('#submit').click(function() {
+                    $('#form').submit();
+                    alert("上传");
+                    window.location.href="myphoto.html";
+                });
+            </script>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <pre>
+        Copyright © 2020 -- Charon
+        Tel/Wechat:18717918671
+        QQ:838800433
+        Email:lemon.yang.y@gmail.com
+    </pre>
+</footer>
+<script>
+    $("#file").change(function(){
+        var objUrl = getObjectURL(this.files[0]) ;
+        console.log("objUrl = "+objUrl) ;
+        if (objUrl)
+        {
+            $("#hide").attr("src", objUrl);
+            $("#hide").removeClass("hide");
+            $("#info").addClass("hide");
+        }
+    }) ;
+    function getObjectURL(file)
+    {
+        var url = null ;
+        if (window.createObjectURL!=undefined)
+        { // basic
+            url = window.createObjectURL(file) ;
+        }
+        else if (window.URL!=undefined)
+        {
+            // mozilla(firefox)
+            url = window.URL.createObjectURL(file) ;
+        }
+        else if (window.webkitURL!=undefined) {
+            // webkit or chrome
+            url = window.webkitURL.createObjectURL(file) ;
+        }
+        return url ;
+    }
+</script>
+</body>
+</html>

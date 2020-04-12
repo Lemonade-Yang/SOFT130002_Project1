@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="013cf3d0-58de-469c-a05e-0de9b93a3abf" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZEkhKlhBS9YNt6dGREFRJEIONs" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\0.NULL\FDU\study\web\pj\code\src" />
+      <recent name="E:\0.NULL\FDU\study\web\pj\code\" />
+      <recent name="E:\0.NULL\FDU\study\web\pj\code\images" />
+      <recent name="E:\0.NULL\FDU\study\web\pj\code" />
+      <recent name="E:\0.NULL\FDU\study\web\pj\code\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\0.NULL\FDU\study\web\pj\code\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="013cf3d0-58de-469c-a05e-0de9b93a3abf" name="Default Changelist" comment="" />
+      <created>1584411758638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584411758638</updated>
+      <workItem from="1584411759974" duration="2732000" />
+      <workItem from="1584926371141" duration="629000" />
+      <workItem from="1585464562965" duration="7953000" />
+      <workItem from="1585532620478" duration="8436000" />
+      <workItem from="1585550927050" duration="10537000" />
+      <workItem from="1585570498149" duration="8127000" />
+      <workItem from="1585619559363" duration="5332000" />
+      <workItem from="1585635746806" duration="11154000" />
+      <workItem from="1585725782173" duration="8002000" />
+      <workItem from="1586076016698" duration="30000" />
+      <workItem from="1586083251525" duration="2929000" />
+      <workItem from="1586158111544" duration="13247000" />
+      <workItem from="1586309145179" duration="52000" />
+      <workItem from="1586499980198" duration="8966000" />
+      <workItem from="1586513901307" duration="14895000" />
+      <workItem from="1586529809232" duration="3490000" />
+      <workItem from="1586668072313" duration="6752000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
