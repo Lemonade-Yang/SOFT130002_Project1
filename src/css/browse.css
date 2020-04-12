@@ -143,7 +143,9 @@ article{
 article img{
     border-radius: 6px;
     width: 180px;
+    height: 180px;
     margin-bottom: 5px;
+    object-fit: cover;
 }
 article .pic-intro{
     padding: 0 4px;
